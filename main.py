@@ -1,3 +1,4 @@
+
 import pyautogui
 import time
 
@@ -15,16 +16,18 @@ print(settot)
 goodwords = []
 
 with open("words_alpha.txt", "r") as file:
-            allText = file.read()
-            words = list(map(str, allText.split()))
-            for word in words:
-                setword = set(word)
-                if setword.issubset(settot) and w7 in word:
-                    goodwords.append(word)
+    allText = file.read()
+    words = list(map(str, allText.split()))
+    for word in words:
+        setword = set(word)
+        if setword.issubset(settot) and w7 in word:
+            goodwords.append(word)
+
+
 
 
 for word in goodwords:
-    if len(word) < 4:
+    if len(word) <= 3:
         goodwords.remove(word)
         
 print(goodwords)
