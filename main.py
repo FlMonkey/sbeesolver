@@ -32,8 +32,8 @@ print(goodwords)
 input("press enter to start typing words")
 time.sleep(2)
 
+
 for word in goodwords:
     pyautogui.typewrite(word)
     pyautogui.press("enter")
-    time.sleep(0.5)
- 
+    time.sleep(0.7)
