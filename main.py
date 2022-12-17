@@ -1,4 +1,3 @@
-
 import pyautogui
 import time
 
@@ -22,8 +21,6 @@ with open("words_alpha.txt", "r") as file:
         setword = set(word)
         if setword.issubset(settot) and w7 in word:
             goodwords.append(word)
-
-
 
 
 for word in goodwords:
